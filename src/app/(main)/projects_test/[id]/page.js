@@ -1,6 +1,8 @@
 import React from 'react';
 import "@/app/(main)/projects_test/[id]/page.css"
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function Page() {
   return (
@@ -34,16 +36,16 @@ export default function Page() {
           </div>
           <h3 className="subsection-title">링크</h3>
           <div className="links">
-            <a href="https://web-programming-team-project.vercel.app/" className="link-button live-demo">
+            <Link href="https://web-programming-team-project.vercel.app/" className="link-button live-demo">
               라이브 데모
-            </a>
-            <a href="https://web-programming-team-project.vercel.app/" className="link-button github">
+            </Link>
+            <Link href="https://web-programming-team-project.vercel.app/" className="link-button github">
               GitHub
-            </a>
+            </Link>
           </div>
-          <a href="/projects" className="back-link">
+          <Link href="/projects" className="back-link">
             ← 프로젝트 목록으로 돌아가기
-          </a>
+          </Link>
         </div>
 
         {/* 별도의 사진 갤러리 섹션 */}
